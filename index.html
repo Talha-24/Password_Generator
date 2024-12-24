@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="password.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div  class="password-container">
+        <div class="header">
+            <h2>Password Generator</h2>
+        </div>
+        <div class="display">
+            <input type="text" placeholder="Password" min="8" value="" max="20"  disabled>
+            <button id="copybtn">Copy</button>
+        </div>
+        <div class="setting">
+            <label  id="length_label"> Length</label>
+            <input type="number" id="Length" step="1" max="20" min="5"   value="8">
+        </div>
+        <div class="setting">
+            <label  id="uppercase_label"> UpperCase</label>
+            <input type="checkbox" id="UpperCase" checked >
+        </div>
+        <div class="setting">
+            <label  id="lowercase_label"> LowerCase</label>
+            <input type="checkbox" id="LowerCase" checked >
+        </div>
+        <div class="setting">
+            <label  id="number_label"> Numbers</label>
+            <input type="checkbox" id="Number" checked >
+        </div>
+        <div class="setting">
+            <label  id="symbol_label"> Symbols</label>
+            <input type="checkbox" id="Symbol" checked >
+        </div>
+      
+            <button id="generate-button">Generate</button>
+            <div id="historyContainer">
+                <div id="historybtns">
+                <button id="showdata">Show History</button>
+                <button id="clearhistory">Clear History</button>
+                     </div>
+                  
+                <div id="paras">
+                    
+                   
+                </div>
+            
+               </div>
+       
+
+    </div>
+    
+
+
+
+
+
+    <script src="password.js"></script>
+</body>
+</html>
